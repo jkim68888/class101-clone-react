@@ -2,9 +2,7 @@
 
 <img src="https://user-images.githubusercontent.com/75922558/115599853-0184fc80-a317-11eb-91ef-0b72b8655f71.png" width="56" height="56">
 <br/>
-<br/>
 <img src="https://user-images.githubusercontent.com/75922558/112740394-936b4500-8fb7-11eb-82ca-20e66a53ad10.png" width="56" height="56">
-<br/>
 <br/>
 
 ## 개요
