@@ -3,14 +3,18 @@ import find from '../../../imgs/find_ico.png';
 
 export const HeaderWrapper = styled.div`
   width: 100%;
-  height: 86px;
+  height: auto;
 `;
 export const HeaderWrap = styled.div`
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   max-width: 1176px;
-  height: 100%;
   margin: 0 auto;
+`;
+export const TopHeader = styled.div`
+  display: flex;
+  justify-content: space-between;
+  height: 86px;
 `;
 export const LeftHeader = styled.div`
   display: flex;
@@ -50,4 +54,8 @@ export const RightHeader = styled.div`
     font-weight: normal;
     cursor: pointer;
   }
+`;
+export const BottomHeader = styled.div`
+  display: flex;
+  height: 52px;
 `;
