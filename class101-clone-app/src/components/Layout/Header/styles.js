@@ -48,14 +48,40 @@ export const RightHeader = styled.div`
   
   button{
     border: none;
-    background: transparent;
-    font-size: 17px;
+    padding: 5px 18px;
+    border-radius: 70px;
+    background: #ebebeb;
+    font-size: 15px;
     color: #343434;
     font-weight: normal;
     cursor: pointer;
+
+    &:hover{
+      background: blue;
+      color: #fff;
+    }
   }
 `;
 export const BottomHeader = styled.div`
   display: flex;
   height: 52px;
+
+  ul{
+    display: flex;
+    line-height: 52px;
+
+    li{
+      margin-right: 40px;
+
+      & .selected{
+        font-weight: bold;
+        color: blue;
+        border-bottom: 2px solid blue;
+      }
+
+      &:hover{
+        font-weight: bold;
+      }
+    }
+  }
 `;

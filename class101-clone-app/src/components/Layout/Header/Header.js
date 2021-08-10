@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link, Route} from 'react-router-dom';
+import {Link, NavLink, Route} from 'react-router-dom';
 import logo from '../../../imgs/logo.png';
 
 import Main from '../../../Pages/Main/Main';
@@ -31,12 +31,10 @@ const Header = () => {
             </RightHeader>
           </TopHeader>
           <BottomHeader>
-            <ul>
-              <li>
-                <Link to="/">전체 카테고리</Link>
-                <Link to="/earlybird">얼리버드</Link>
-                <Link to="/event">이벤트</Link>
-              </li>
+            <ul>              
+              <li><NavLink activeClassName="selected" exact to="/">홈</NavLink></li>
+              <li><NavLink activeClassName="selected" to="/earlybird">얼리버드</NavLink></li>
+              <li><NavLink activeClassName="selected" to="/event">이벤트</NavLink></li>
             </ul>
           </BottomHeader>
         </HeaderWrap>
