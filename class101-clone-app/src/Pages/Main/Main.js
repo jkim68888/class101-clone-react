@@ -1,15 +1,17 @@
-import React from 'react';
-import SlideBanner from '../../components/Main/SlideBanner';
-import EventBanner from '../../components/Main/EventBanner';
+import React from "react";
+import SlideBanner from "../../components/Main/SlideBanner";
+import EventBanner from "../../components/Main/EventBanner";
+import TimeDeal from "../../components/Main/TimeDeal";
 
-import { MainWrapper, MainWrap } from './Styles';
+import { MainWrapper, MainWrap } from "./Styles";
 
 const Main = () => {
   return (
     <MainWrapper>
       <SlideBanner />
-      <EventBanner />
       <MainWrap>
+        <EventBanner />
+        <TimeDeal />
       </MainWrap>
     </MainWrapper>
   );

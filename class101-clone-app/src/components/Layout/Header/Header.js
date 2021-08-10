@@ -1,13 +1,20 @@
-import React from 'react';
-import {Link, NavLink, Route} from 'react-router-dom';
-import logo from '../../../imgs/logo.png';
+import React from "react";
+import { Link, NavLink, Route } from "react-router-dom";
+import logo from "../../../imgs/logo.png";
 
-import Main from '../../../Pages/Main/Main';
-import Earlybird from '../../../Pages/Sub/Earlybird/Earlybird';
-import Event from '../../../Pages/Sub/Event/Event';
+import Main from "../../../Pages/Main/Main";
+import Earlybird from "../../../Pages/Sub/Earlybird/Earlybird";
+import Event from "../../../Pages/Sub/Event/Event";
 // import NotFound from '../../../Pages/NotFound/NotFound';
 
-import { HeaderWrapper, HeaderWrap, TopHeader, LeftHeader, RightHeader, BottomHeader } from './Styles';
+import {
+  HeaderWrapper,
+  HeaderWrap,
+  TopHeader,
+  LeftHeader,
+  RightHeader,
+  BottomHeader,
+} from "./Styles";
 
 const Header = () => {
   return (
@@ -31,10 +38,22 @@ const Header = () => {
             </RightHeader>
           </TopHeader>
           <BottomHeader>
-            <ul>              
-              <li><NavLink activeClassName="selected" exact to="/">홈</NavLink></li>
-              <li><NavLink activeClassName="selected" to="/earlybird">얼리버드</NavLink></li>
-              <li><NavLink activeClassName="selected" to="/event">이벤트</NavLink></li>
+            <ul>
+              <li>
+                <NavLink activeClassName="selected" exact to="/">
+                  홈
+                </NavLink>
+              </li>
+              <li>
+                <NavLink activeClassName="selected" to="/earlybird">
+                  얼리버드
+                </NavLink>
+              </li>
+              <li>
+                <NavLink activeClassName="selected" to="/event">
+                  이벤트
+                </NavLink>
+              </li>
             </ul>
           </BottomHeader>
         </HeaderWrap>

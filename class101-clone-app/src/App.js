@@ -1,10 +1,10 @@
-import React from 'react';
-import {withRouter} from 'react-router-dom';
-import './commonStyles.css';
-import Header from './components/Layout/Header/Header';
-import Footer from './components/Layout/Footer/Footer';
+import React from "react";
+import { withRouter } from "react-router-dom";
+import "./commonStyles.css";
+import Header from "./components/Layout/Header/Header";
+import Footer from "./components/Layout/Footer/Footer";
 
-const App = ({Children}) => {
+const App = ({ Children }) => {
   return (
     <>
       <Header />
