@@ -21,7 +21,8 @@
 
 ## 기능 구현
 
-1. 회원가입 / 로그인 : firebase authentication 사용
+1. 페이지 이동 : react-router-dom 의 BrowserRouter 와 NavLink 사용
+2. 회원가입 / 로그인 : firebase authentication 사용
 
 ## 작업기간
 
