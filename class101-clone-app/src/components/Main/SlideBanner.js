@@ -1,34 +1,34 @@
-import React from 'react';
-import 'swiper/swiper.scss';
-import SwiperCore, {Autoplay, Navigation, Pagination, Scrollbar} from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
-// import blue from '../../imgs/slidebanner_blue.jpg';
-// import red from '../../imgs/slidebanner_red.jpg';
-// import orange from '../../imgs/slidebanner_orange.jpg';
-// import pink from '../../imgs/slidebanner_pink.png';
+import React from "react";
+import "swiper/swiper.scss";
+import "swiper/components/navigation/navigation.scss";
+import "swiper/components/pagination/pagination.scss";
+import SwiperCore, { Autoplay, Navigation, Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
 
-import './Styles';
-import { SlideBannerWrapper } from './Styles';
+import { SlideBannerWrapper, SlideBannerWrap } from "./Styles";
 
 const SlideBanner = () => {
-  SwiperCore.use([Autoplay, Navigation, Pagination, Scrollbar]);
+  SwiperCore.use([Autoplay, Navigation, Pagination]);
   return (
     <SlideBannerWrapper>
-      <Swiper
-        slidesPerView={1}
-        loop={true}
-        navigation
-        autoplay={{
-          delay: 3000,
-        }}
-        pagination={{ clickable: true }}
-        scrollbar={{ draggable: true }}
-      >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-      </Swiper>
+      <SlideBannerWrap>
+        <Swiper
+          slidesPerView={1}
+          loop={true}
+          autoplay={{
+            delay: 3000,
+          }}
+          pagination={{ clickable: true }}
+          navigation
+        >
+          <SwiperSlide>Slide 1</SwiperSlide>
+          <SwiperSlide>Slide 2</SwiperSlide>
+          <SwiperSlide>Slide 3</SwiperSlide>
+          <SwiperSlide>Slide 4</SwiperSlide>
+          <SwiperSlide>Slide 5</SwiperSlide>
+          <SwiperSlide>Slide 6</SwiperSlide>
+        </Swiper>
+      </SlideBannerWrap>
     </SlideBannerWrapper>
   );
 };

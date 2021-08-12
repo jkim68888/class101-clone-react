@@ -1,6 +1,8 @@
 import styled from "styled-components";
+import arrowLeft from "../../imgs/arrow_left.svg";
+import arrowRight from "../../imgs/arrow_right.svg";
 
-export const SlideBannerWrapper = styled.div`
+export const MainSlideBannerWrapper = styled.div`
   width: 100%;
   height: 400px;
   background: lightgray;
@@ -8,9 +10,14 @@ export const SlideBannerWrapper = styled.div`
   font-size: 26px;
   text-align: center;
   line-height: 400px;
+
+  & .swiper-pagination-bullets {
+    height: 20px;
+    line-height: 20px;
+  }
 `;
 export const EventBannerWrapper = styled.div`
-  width: 100%;
+  max-width: 1172px;
   margin: 60px auto;
   height: 100px;
   line-height: 100px;
@@ -25,5 +32,138 @@ export const EventBannerWrapper = styled.div`
 `;
 export const TimeDealWrapper = styled.div`
   width: 100%;
+`;
+export const TimeDealWrap = styled.div`
+  max-width: 1172px;
   height: auto;
+  margin: 0 auto;
+
+  h2 {
+    margin-bottom: 40px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #121212;
+  }
+
+  & .swiper-slide {
+    width: 320px;
+    margin: 0 25px 120px 0;
+    height: 240px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.08);
+  }
+  & .swiper-button-prev::after,
+  .swiper-button-next::after {
+    content: "";
+  }
+  & .swiper-button-prev {
+    top: 120px;
+    background: url(${arrowLeft}) no-repeat center;
+  }
+  & .swiper-button-next {
+    top: 120px;
+    background: url(${arrowRight}) no-repeat center;
+  }
+  & .swiper-button-prev.swiper-button-disabled,
+  .swiper-button-next.swiper-button-disabled {
+    opacity: 0;
+  }
+`;
+export const MdWrapper = styled.div`
+  width: 100%;
+`;
+export const MdDealWrap = styled.div`
+  max-width: 1172px;
+  height: auto;
+  margin: 0 auto;
+
+  h2 {
+    margin-bottom: 40px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #121212;
+  }
+
+  & .swiper-slide {
+    width: 320px;
+    margin: 0 25px 120px 0;
+    height: 400px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.08);
+  }
+  & .swiper-button-prev::after,
+  .swiper-button-next::after {
+    content: "";
+  }
+  & .swiper-button-prev {
+    top: 200px;
+    background: url(${arrowLeft}) no-repeat center;
+  }
+  & .swiper-button-next {
+    top: 200px;
+    background: url(${arrowRight}) no-repeat center;
+  }
+  & .swiper-button-prev.swiper-button-disabled,
+  .swiper-button-next.swiper-button-disabled {
+    opacity: 0;
+  }
+`;
+export const SlideBannerWrapper = styled.div`
+  width: 100%;
+  height: 180px;
+  margin-bottom: 120px;
+  background: lightgray;
+`;
+export const SlideBannerWrap = styled.div`
+  max-width: 1172px;
+  margin: 0 auto;
+  line-height: 180px;
+  text-align: center;
+
+  & .swiper-pagination-bullets {
+    height: 20px;
+    line-height: 20px;
+  }
+`;
+export const BestWrapper = styled.div`
+  width: 100%;
+`;
+export const BestWrap = styled.div`
+  max-width: 1172px;
+  height: auto;
+  margin: 0 auto;
+
+  h2 {
+    margin-bottom: 40px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #121212;
+  }
+
+  & .swiper-slide {
+    width: 320px;
+    margin: 0 25px 120px 0;
+    height: 240px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.08);
+  }
+  & .swiper-button-prev::after,
+  .swiper-button-next::after {
+    content: "";
+  }
+  & .swiper-button-prev {
+    top: 120px;
+    background: url(${arrowLeft}) no-repeat center;
+  }
+  & .swiper-button-next {
+    top: 120px;
+    background: url(${arrowRight}) no-repeat center;
+  }
+  & .swiper-button-prev.swiper-button-disabled,
+  .swiper-button-next.swiper-button-disabled {
+    opacity: 0;
+  }
 `;
