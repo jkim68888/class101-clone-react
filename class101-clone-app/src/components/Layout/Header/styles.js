@@ -8,8 +8,12 @@ export const HeaderWrapper = styled.div`
 export const HeaderWrap = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 1176px;
+  max-width: 1172px;
   margin: 0 auto;
+
+  @media screen and (max-width: 1172px) {
+    padding: 0 30px;
+  }
 `;
 export const TopHeader = styled.div`
   display: flex;

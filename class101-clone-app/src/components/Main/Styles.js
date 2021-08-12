@@ -24,6 +24,10 @@ export const EventBannerWrapper = styled.div`
   padding: 0 20px;
   background: #121212;
 
+  @media screen and (max-width: 1172px) {
+    padding: 0 30px;
+  }
+
   h2 {
     font-size: 20px;
     font-weight: 500;
@@ -37,6 +41,10 @@ export const TimeDealWrap = styled.div`
   max-width: 1172px;
   height: auto;
   margin: 0 auto;
+
+  @media screen and (max-width: 1172px) {
+    padding: 0 30px;
+  }
 
   h2 {
     margin-bottom: 40px;
@@ -77,6 +85,10 @@ export const MdDealWrap = styled.div`
   max-width: 1172px;
   height: auto;
   margin: 0 auto;
+
+  @media screen and (max-width: 1172px) {
+    padding: 0 30px;
+  }
 
   h2 {
     margin-bottom: 40px;
@@ -122,6 +134,10 @@ export const SlideBannerWrap = styled.div`
   line-height: 180px;
   text-align: center;
 
+  @media screen and (max-width: 1172px) {
+    padding: 0 30px;
+  }
+
   & .swiper-pagination-bullets {
     height: 20px;
     line-height: 20px;
@@ -134,6 +150,10 @@ export const BestWrap = styled.div`
   max-width: 1172px;
   height: auto;
   margin: 0 auto;
+
+  @media screen and (max-width: 1172px) {
+    padding: 0 30px;
+  }
 
   h2 {
     margin-bottom: 40px;
