@@ -21,6 +21,7 @@ export const FooterWrap = styled.div`
 
     img {
       width: 120px;
+      margin-bottom: 20px;
     }
     p {
       font-size: 15px;
