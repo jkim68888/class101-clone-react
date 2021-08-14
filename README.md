@@ -24,19 +24,25 @@
   1. Unsplash Image API 사용
      ![unsplash](https://user-images.githubusercontent.com/75922558/129434826-a8f9b3fe-3f2a-4d32-b5d4-9327ea973011.PNG)
 
-  2. Youtube Data API 사용
-     ![playlist](https://user-images.githubusercontent.com/75922558/129434856-33a382af-677a-4a41-b96e-9e168ddc9804.PNG)
-     ![dog](https://user-images.githubusercontent.com/75922558/129435016-81dc3811-e19a-4856-8ba5-b158052aa0b6.PNG)
+     - Promise 객체 기반 HTTP 비동기 통신 라이브러리인 `Axios`를 사용하여 `get 메소드`로 Unsplash api를 요청해서 api에 들어있는 이미지 url을 받아 화면에 나타내었습니다.
 
-  - Promise 객체 기반 HTTP 비동기 통신 라이브러리인 `Axios`를 사용하여 `get 메서드`로 Unsplash api를 요청해서 api에 들어있는 이미지 url을 받아 화면에 나타내었습니다.
-  - 이때, 이미지 데이터 상태관리를 `useState Hook`을 사용하여 하였습니다.
+     - 이때, 이미지 데이터 상태관리를 `useState Hook`을 사용하여 하였습니다.
+
+  2. Youtube Data API 사용
+     ![playlist](https://user-images.githubusercontent.com/75922558/129450201-ec3b66e7-c759-4fcb-b116-c00adffadd0a.PNG)
+
+     ![dog](https://user-images.githubusercontent.com/75922558/129450212-18b0e130-d58b-4d88-a7aa-cbf35241961d.PNG)
+
+     - `Axios`를 사용하여 `get 메소드`로 Youtube data api를 요청하였습니다.
+     - `state`값을 `배열`로 만들어 배열안에 `객체`를 담았습니다.
+     - `map` 함수를 사용하여 배열 안의 각각의 객체에 접근하여 유튜브 영상의 `썸네일, 영상제목, 유튜버이름`을 가져왔습니다.
 
 1. 상세페이지 (2P)
 
 ## 기능 구현
 
 1. 페이지 이동 : react-router-dom 의 `BrowserRouter` 와 `NavLink` 사용
-2. 회원가입&로그인 : Firebase Authentication 사용
+2. 회원가입&로그인 : `Firebase Authentication` 사용
 
 ## 작업기간
 

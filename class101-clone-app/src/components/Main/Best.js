@@ -10,7 +10,13 @@ import { BestWrapper, BestWrap } from "./Styles";
 const Best = () => {
   SwiperCore.use([Autoplay, Navigation]);
 
-  const [videos, setvideos] = useState();
+  const [videos, setvideos] = useState([
+    {
+      thumbnail: "",
+      title: "",
+      youtuber: "",
+    },
+  ]);
 
   useEffect(() => {
     axios
@@ -25,11 +31,15 @@ const Best = () => {
         },
       })
       .then((response) => {
-        setvideos(
-          response.data.items.map(
-            (video) => video.snippet.thumbnails.medium.url
-          )
-        );
+        const arrayVideos = response.data.items.map((video) => {
+          return {
+            thumbnail: video.snippet.thumbnails.medium.url,
+            title: video.snippet.title,
+            youtuber: video.snippet.channelTitle,
+          };
+        });
+        setvideos(arrayVideos);
+        console.log(response);
       });
     console.log(videos);
   }, []);
@@ -40,13 +50,15 @@ const Best = () => {
         <h2>유튜브 강아지🐶 관련 영상 모음</h2>
         <Swiper slidesPerView={"auto"} navigation>
           {videos &&
-            videos.map((randomVideo, index) => {
+            videos.map((video, index) => {
               return (
-                <SwiperSlide key={index.toString}>
+                <SwiperSlide key={index.toString()}>
                   <div
                     className="thumbnailWrap"
-                    style={{ backgroundImage: `url(${randomVideo})` }}
+                    style={{ backgroundImage: `url(${video.thumbnail})` }}
                   ></div>
+                  <h1>{video.title}</h1>
+                  <h2>{video.youtuber}</h2>
                 </SwiperSlide>
               );
             })}

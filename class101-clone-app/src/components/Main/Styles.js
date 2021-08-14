@@ -55,7 +55,7 @@ export const TimeDealWrap = styled.div`
 
   & .swiper-slide {
     width: 320px;
-    margin: 0 25px 120px 0;
+    margin: 0 25px 180px 0;
     height: 240px;
     background: #fff;
     border-radius: 5px;
@@ -66,6 +66,18 @@ export const TimeDealWrap = styled.div`
       height: 100%;
       border-radius: 5px;
       background-size: 100% 100%;
+    }
+
+    h1 {
+      margin: 5px 0;
+      font-size: 18px;
+      color: #333;
+    }
+
+    h2 {
+      margin: 5px 0;
+      font-size: 15px;
+      color: #555;
     }
   }
   & .swiper-button-prev::after,
@@ -178,7 +190,7 @@ export const BestWrap = styled.div`
 
   & .swiper-slide {
     width: 320px;
-    margin: 0 25px 120px 0;
+    margin: 0 25px 180px 0;
     height: 240px;
     background: #fff;
     border-radius: 5px;
@@ -189,6 +201,18 @@ export const BestWrap = styled.div`
       height: 100%;
       border-radius: 5px;
       background-size: 100% 100%;
+    }
+
+    h1 {
+      margin: 5px 0;
+      font-size: 18px;
+      color: #333;
+    }
+
+    h2 {
+      margin: 5px 0;
+      font-size: 15px;
+      color: #555;
     }
   }
   & .swiper-button-prev::after,

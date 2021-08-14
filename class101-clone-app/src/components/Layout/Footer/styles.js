@@ -5,6 +5,7 @@ export const FooterWrapper = styled.div`
   height: auto;
   border-top: 1.2px solid #e9e9e9;
   padding: 60px 0;
+  margin-top: 40px;
 `;
 export const FooterWrap = styled.div`
   display: flex;
