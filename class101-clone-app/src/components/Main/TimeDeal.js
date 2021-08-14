@@ -12,6 +12,7 @@ const TimeDeal = () => {
 
   const [videos, setvideos] = useState([
     {
+      link: "",
       thumbnail: "",
       title: "",
       youtuber: "",
@@ -33,6 +34,7 @@ const TimeDeal = () => {
       .then((response) => {
         const arrayVideos = response.data.items.map((video) => {
           return {
+            link: `https://www.youtube.com/watch?v=${video.id.videoId}`,
             thumbnail: video.snippet.thumbnails.medium.url,
             title: video.snippet.title,
             youtuber: video.snippet.channelTitle,
@@ -52,10 +54,13 @@ const TimeDeal = () => {
             videos.map((video, index) => {
               return (
                 <SwiperSlide key={index.toString()}>
-                  <div
+                  <a
+                    href={video.link}
                     className="thumbnailWrap"
                     style={{ backgroundImage: `url(${video.thumbnail})` }}
-                  ></div>
+                  >
+                    <p>go to link</p>
+                  </a>
                   <h1>{video.title}</h1>
                   <h2>{video.youtuber}</h2>
                 </SwiperSlide>

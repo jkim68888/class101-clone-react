@@ -62,10 +62,29 @@ export const TimeDealWrap = styled.div`
     box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.08);
 
     & .thumbnailWrap {
+      position: relative;
       width: 100%;
       height: 100%;
       border-radius: 5px;
       background-size: 100% 100%;
+      background-color: #000000;
+
+      p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: fit-content;
+        height: 33px;
+        padding: 0 8px;
+        border-bottom: 2px solid #ffffff;
+        font-size: 18px;
+        color: #fff;
+      }
+
+      &:hover {
+        opacity: 0.5;
+      }
     }
 
     h1 {
