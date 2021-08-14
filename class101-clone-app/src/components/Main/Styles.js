@@ -60,6 +60,13 @@ export const TimeDealWrap = styled.div`
     background: #fff;
     border-radius: 5px;
     box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.08);
+
+    & .thumbnailWrap {
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+      background-size: 100% 100%;
+    }
   }
   & .swiper-button-prev::after,
   .swiper-button-next::after {
@@ -176,6 +183,13 @@ export const BestWrap = styled.div`
     background: #fff;
     border-radius: 5px;
     box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.08);
+
+    & .thumbnailWrap {
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+      background-size: 100% 100%;
+    }
   }
   & .swiper-button-prev::after,
   .swiper-button-next::after {

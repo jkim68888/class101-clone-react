@@ -23,15 +23,13 @@ const Md = () => {
       })
       .then((response) => {
         setImgs(response.data.map((img) => img.urls.small));
-        console.log(response);
       });
-    console.log(imgs);
   }, []);
 
   return (
     <MdWrapper>
       <MdDealWrap>
-        <h2>MD 추천 클래스</h2>
+        <h2>랜덤 이미지</h2>
         <Swiper slidesPerView={"auto"} navigation>
           {imgs &&
             imgs.map((randomImg, index) => {

@@ -20,11 +20,16 @@
 
 - 슬라이드 배너 구현 : Swiper v6.8.1 사용
 - 클래스 리스트 화면 구현 :
+
   1. Unsplash Image API 사용
-     ![unsplash](https://user-images.githubusercontent.com/75922558/129433445-7429af61-f29c-47ec-8e2e-a5480a0e93fd.PNG)
-     - Promise 객체 기반 HTTP 비동기 통신 라이브러리인 `Axios`를 사용하여 `get 메서드`로 Unsplash api를 요청해서 api에 들어있는 이미지 url을 받아 화면에 나타내었습니다.
-     - 이때, 이미지 데이터 상태관리를 `useState Hook`을 사용하여 하였습니다.
+     ![unsplash](https://user-images.githubusercontent.com/75922558/129434826-a8f9b3fe-3f2a-4d32-b5d4-9327ea973011.PNG)
+
   2. Youtube Data API 사용
+     ![playlist](https://user-images.githubusercontent.com/75922558/129434856-33a382af-677a-4a41-b96e-9e168ddc9804.PNG)
+     ![dog](https://user-images.githubusercontent.com/75922558/129435016-81dc3811-e19a-4856-8ba5-b158052aa0b6.PNG)
+
+  - Promise 객체 기반 HTTP 비동기 통신 라이브러리인 `Axios`를 사용하여 `get 메서드`로 Unsplash api를 요청해서 api에 들어있는 이미지 url을 받아 화면에 나타내었습니다.
+  - 이때, 이미지 데이터 상태관리를 `useState Hook`을 사용하여 하였습니다.
 
 1. 상세페이지 (2P)
 

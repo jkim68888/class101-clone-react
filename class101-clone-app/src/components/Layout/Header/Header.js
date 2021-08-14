@@ -3,8 +3,8 @@ import { Link, NavLink, Route } from "react-router-dom";
 import logo from "../../../imgs/logo.png";
 
 import Main from "../../../Pages/Main/Main";
-import Earlybird from "../../../Pages/Sub/Earlybird/Earlybird";
-import Event from "../../../Pages/Sub/Event/Event";
+import Earlybird from "../../../Pages/Sub/Earlybird";
+import Event from "../../../Pages/Sub/Event";
 // import NotFound from '../../../Pages/NotFound/NotFound';
 
 import {

@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
 import SwiperCore, { Autoplay, Navigation } from "swiper";
@@ -8,17 +9,47 @@ import { TimeDealWrapper, TimeDealWrap } from "./Styles";
 
 const TimeDeal = () => {
   SwiperCore.use([Autoplay, Navigation]);
+
+  const [videos, setvideos] = useState();
+
+  useEffect(() => {
+    axios
+      .get("https://www.googleapis.com/youtube/v3/search?", {
+        params: {
+          key: "AIzaSyDwRmgs_Qmt0bz1fljFsZlSspD_LOD_-_g",
+          part: "snippet",
+          q: "playlist",
+          maxResults: 10,
+          type: "video",
+          videoDuration: "long",
+        },
+      })
+      .then((response) => {
+        setvideos(
+          response.data.items.map(
+            (video) => video.snippet.thumbnails.medium.url
+          )
+        );
+      });
+    console.log(videos);
+  }, []);
+
   return (
     <TimeDealWrapper>
       <TimeDealWrap>
-        <h2>오늘의 특가! TIME DEAL</h2>
+        <h2>유튜브 playlist 관련 영상 모음</h2>
         <Swiper slidesPerView={"auto"} navigation>
-          <SwiperSlide>Slide 1</SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-          <SwiperSlide>Slide 4</SwiperSlide>
-          <SwiperSlide>Slide 5</SwiperSlide>
-          <SwiperSlide>Slide 6</SwiperSlide>
+          {videos &&
+            videos.map((randomVideo, index) => {
+              return (
+                <SwiperSlide key={index.toString}>
+                  <div
+                    className="thumbnailWrap"
+                    style={{ backgroundImage: `url(${randomVideo})` }}
+                  ></div>
+                </SwiperSlide>
+              );
+            })}
         </Swiper>
       </TimeDealWrap>
     </TimeDealWrapper>
