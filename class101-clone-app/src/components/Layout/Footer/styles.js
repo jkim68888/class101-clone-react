@@ -39,8 +39,9 @@ export const FooterWrap = styled.div`
 
       a {
         position: relative;
-        font-size: 14px;
         margin: 0 20px;
+        font-size: 14px;
+        color: #444;
 
         &:first-of-type {
           margin-left: 0;
@@ -59,6 +60,11 @@ export const FooterWrap = styled.div`
       & .noCircle::after {
         content: "";
       }
+    }
+
+    p {
+      font-size: 15px;
+      color: #444;
     }
   }
 `;

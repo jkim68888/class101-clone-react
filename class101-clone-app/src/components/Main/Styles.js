@@ -104,6 +104,13 @@ export const MdDealWrap = styled.div`
     background: #fff;
     border-radius: 5px;
     box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.08);
+
+    & .backgroundWrap {
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+      background-size: cover;
+    }
   }
   & .swiper-button-prev::after,
   .swiper-button-next::after {
