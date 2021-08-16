@@ -256,21 +256,14 @@ export const SlideBannerWrapper = styled.div`
   width: 100%;
   height: 180px;
   margin-bottom: 120px;
-  background: lightgray;
 `;
 export const SlideBannerWrap = styled.div`
-  max-width: 1172px;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
-  line-height: 180px;
-  text-align: center;
 
   @media screen and (max-width: 1172px) {
     padding: 0 30px;
-  }
-
-  & .swiper-pagination-bullets {
-    height: 20px;
-    line-height: 20px;
   }
 `;
 export const BestWrapper = styled.div`
