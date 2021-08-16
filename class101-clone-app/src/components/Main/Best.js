@@ -41,31 +41,48 @@ const Best = () => {
           };
         });
         setvideos(arrayVideos);
-        console.log(response);
       });
-    console.log(videos);
   }, []);
+
+  const navigationPrevRef = React.useRef(null);
+  const navigationNextRef = React.useRef(null);
 
   return (
     <BestWrapper>
       <BestWrap>
         <h2>유튜브 강아지🐶 관련 영상 모음</h2>
-        <Swiper slidesPerView={"auto"} navigation>
+        <Swiper
+          slidesPerView={"auto"}
+          navigation={{
+            prevEl: navigationPrevRef.current,
+            nextEl: navigationNextRef.current,
+          }}
+          onBeforeInit={(swiper) => {
+            swiper.params.navigation.prevEl = navigationPrevRef.current;
+            swiper.params.navigation.nextEl = navigationNextRef.current;
+          }}
+        >
           {videos &&
             videos.map((video, index) => {
               return (
                 <SwiperSlide key={index.toString()}>
-                  <a
-                    href={video.link}
-                    className="thumbnailWrap"
-                    style={{ backgroundImage: `url(${video.thumbnail})` }}
-                  ></a>
+                  <div className="thumbnailBackground">
+                    <a
+                      target={"_blank"}
+                      href={video.link}
+                      className="thumbnailWrap"
+                      style={{ backgroundImage: `url(${video.thumbnail})` }}
+                    ></a>
+                    <p>go to link</p>
+                  </div>
                   <h1>{video.title}</h1>
                   <h2>{video.youtuber}</h2>
                 </SwiperSlide>
               );
             })}
         </Swiper>
+        <button ref={navigationPrevRef} className="prevBtn"></button>
+        <button ref={navigationNextRef} className="nextBtn"></button>
       </BestWrap>
     </BestWrapper>
   );

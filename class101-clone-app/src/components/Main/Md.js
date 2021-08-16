@@ -26,11 +26,24 @@ const Md = () => {
       });
   }, []);
 
+  const navigationPrevRef = React.useRef(null);
+  const navigationNextRef = React.useRef(null);
+
   return (
     <MdWrapper>
       <MdDealWrap>
         <h2>랜덤 이미지</h2>
-        <Swiper slidesPerView={"auto"} navigation>
+        <Swiper
+          slidesPerView={"auto"}
+          navigation={{
+            prevEl: navigationPrevRef.current,
+            nextEl: navigationNextRef.current,
+          }}
+          onBeforeInit={(swiper) => {
+            swiper.params.navigation.prevEl = navigationPrevRef.current;
+            swiper.params.navigation.nextEl = navigationNextRef.current;
+          }}
+        >
           {imgs &&
             imgs.map((randomImg, index) => {
               return (
@@ -43,6 +56,8 @@ const Md = () => {
               );
             })}
         </Swiper>
+        <button ref={navigationPrevRef} className="prevBtn"></button>
+        <button ref={navigationNextRef} className="nextBtn"></button>
       </MdDealWrap>
     </MdWrapper>
   );
