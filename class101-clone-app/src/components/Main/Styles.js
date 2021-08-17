@@ -265,6 +265,32 @@ export const SlideBannerWrap = styled.div`
   @media screen and (max-width: 1172px) {
     padding: 0 30px;
   }
+
+  .swiper-slide{
+    height: auto;
+
+    & .backgroundWrap{
+      width: 100%;
+      height: 100%;
+
+      & .contentWrap{
+        display: flex;
+        justify-content: space-between;
+        max-width: 1172px;
+        margin: 0 auto;
+        
+        & .txtBox{
+          
+        }
+    
+        & .imgBox{
+          width: 360px;
+          height: 240px;
+          background: blue;
+        }
+      }
+    }
+  }
 `;
 export const BestWrapper = styled.div`
   width: 100%;
