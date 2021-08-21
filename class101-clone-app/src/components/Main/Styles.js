@@ -74,7 +74,7 @@ export const TimeDealWrap = styled.div`
         background-color: #000000;
         cursor: pointer;
 
-        &:hover p {
+        &:hover .linkTag {
           opacity: 1;
         }
 
@@ -90,7 +90,7 @@ export const TimeDealWrap = styled.div`
           transition: all ease 0.3s;
         }
 
-        p {
+        .linkTag {
           position: absolute;
           top: 50%;
           left: 50%;
@@ -371,7 +371,7 @@ export const BestWrap = styled.div`
         background-color: #000000;
         cursor: pointer;
 
-        &:hover p {
+        &:hover .linkTag {
           opacity: 1;
         }
 
@@ -387,7 +387,7 @@ export const BestWrap = styled.div`
           transition: all ease 0.3s;
         }
 
-        p {
+        .linkTag {
           position: absolute;
           top: 50%;
           left: 50%;

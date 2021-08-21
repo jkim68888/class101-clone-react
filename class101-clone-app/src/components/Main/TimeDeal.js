@@ -73,7 +73,9 @@ const TimeDeal = () => {
                       className="thumbnailWrap"
                       style={{ backgroundImage: `url(${video.thumbnail})` }}
                     ></a>
-                    <p>go to link</p>
+                    <a className="linkTag" target={"_blank"} href={video.link}>
+                      go to link
+                    </a>
                   </div>
                   <h1>{video.title}</h1>
                   <h2>{video.youtuber}</h2>

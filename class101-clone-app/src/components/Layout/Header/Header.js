@@ -5,7 +5,7 @@ import logo from "../../../imgs/logo.png";
 import Main from "../../../Pages/Main/Main";
 import Earlybird from "../../../Pages/Sub/Earlybird";
 import Event from "../../../Pages/Sub/Event";
-// import NotFound from '../../../Pages/NotFound/NotFound';
+import NotFound from "../../../Pages/NotFound/NotFound";
 
 import {
   HeaderWrapper,
@@ -61,7 +61,7 @@ const Header = () => {
       <Route exact path="/" component={Main} />
       <Route path="/sub/earlybird" component={Earlybird} />
       <Route path="/sub/event" component={Event} />
-      {/* <Route path="/" component={NotFound} /> */}
+      <Route path="/" component={NotFound} />
     </>
   );
 };
