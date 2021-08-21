@@ -254,39 +254,73 @@ export const MdDealWrap = styled.div`
 `;
 export const SlideBannerWrapper = styled.div`
   width: 100%;
-  height: 180px;
+  height: 260px;
   margin-bottom: 120px;
 `;
 export const SlideBannerWrap = styled.div`
   width: 100%;
-  height: 100%;
+  height: 260px;
   margin: 0 auto;
 
   @media screen and (max-width: 1172px) {
     padding: 0 30px;
   }
 
-  .swiper-slide{
-    height: auto;
+  .swiper-slide {
+    position: relative;
+    height: 260px;
 
-    & .backgroundWrap{
+    & .backgroundWrap {
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      justify-content: space-between;
       width: 100%;
-      height: 100%;
+      height: 180px;
 
-      & .contentWrap{
-        display: flex;
-        justify-content: space-between;
+      & .contentWrap {
+        display: table;
         max-width: 1172px;
+        height: 100%;
         margin: 0 auto;
-        
-        & .txtBox{
-          
+
+        & .txtBox {
+          display: table-cell;
+          vertical-align: middle;
+
+          h1 {
+            font-size: 28px;
+            font-weight: 600;
+            color: #fff;
+          }
+          h2 {
+            font-size: 18px;
+            font-weight: 500;
+            color: #fff;
+          }
+          button {
+            width: 100px;
+            height: 30px;
+            margin-top: 15px;
+            background: #fff;
+            border-radius: 4px;
+            color: #343434;
+          }
         }
-    
-        & .imgBox{
-          width: 360px;
-          height: 240px;
-          background: blue;
+      }
+      & .imgBox {
+        position: relative;
+        top: -70px;
+        width: 250px;
+        height: 250px;
+        margin: 0 auto;
+        border-radius: 100%;
+
+        & img {
+          width: 100%;
+          height: 100%;
+          border-radius: 100%;
+          box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, 0.08);
         }
       }
     }
