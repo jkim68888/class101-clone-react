@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import find from "../../../imgs/find_ico.png";
 
 export const HeaderWrapper = styled.div`
   width: 100%;
@@ -33,6 +32,7 @@ export const LeftHeader = styled.div`
   }
 
   & .findBox {
+    position: relative;
     width: 250px;
     line-height: 76px;
 
@@ -41,9 +41,20 @@ export const LeftHeader = styled.div`
       height: 30px;
       border-radius: 30px;
       border: 1px solid #e4e4e4;
-      background: url(${find}) no-repeat calc(100% - 10px);
       background-size: 20px;
       padding: 1px 10px;
+    }
+
+    button {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      transform: translateY(-50%);
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
     }
   }
 `;

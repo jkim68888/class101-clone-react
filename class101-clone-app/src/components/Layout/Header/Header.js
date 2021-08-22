@@ -1,8 +1,10 @@
 import React from "react";
-import { Link, NavLink, Route } from "react-router-dom";
+import { Link, NavLink, Route, Switch } from "react-router-dom";
 import logo from "../../../imgs/logo.png";
+import find from "../../../imgs/find_ico.png";
 
 import Main from "../../../Pages/Main/Main";
+import Signin from "../../../Pages/Signin/Signin";
 import Earlybird from "../../../Pages/Sub/Earlybird";
 import Event from "../../../Pages/Sub/Event";
 import NotFound from "../../../Pages/NotFound/NotFound";
@@ -31,10 +33,15 @@ const Header = () => {
               <div className="findBox">
                 <label />
                 <input placeholder="찾으시는 취미가 있으신가요?" />
+                <button type="submit">
+                  <img src={find} alt="돋보기 아이콘" />
+                </button>
               </div>
             </LeftHeader>
             <RightHeader>
-              <button className="loginBtn">로그인</button>
+              <Link to="/signin">
+                <button className="loginBtn">로그인</button>
+              </Link>
             </RightHeader>
           </TopHeader>
           <BottomHeader>
@@ -58,10 +65,13 @@ const Header = () => {
           </BottomHeader>
         </HeaderWrap>
       </HeaderWrapper>
-      <Route exact path="/" component={Main} />
-      <Route path="/sub/earlybird" component={Earlybird} />
-      <Route path="/sub/event" component={Event} />
-      <Route path="/" component={NotFound} />
+      <Switch>
+        <Route exact path="/" component={Main} />
+        <Route path="/signin" component={Signin} />
+        <Route path="/sub/earlybird" component={Earlybird} />
+        <Route path="/sub/event" component={Event} />
+        <Route path="*" component={NotFound} />
+      </Switch>
     </>
   );
 };
