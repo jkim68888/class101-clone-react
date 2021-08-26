@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { InputFormWrapper } from "./Styles";
 
@@ -9,7 +10,9 @@ const InputForm = () => {
       <input id="email" type="text" placeholder="example@naver.com" />
       <label for="pw">비밀번호</label>
       <input id="pw" type="password" placeholder="********" />
-      <a>회원가입하기</a>
+      <Link to="/signup">
+        <a>회원가입하기</a>
+      </Link>
       <div className="btnBackground">
         <button>로그인</button>
       </div>

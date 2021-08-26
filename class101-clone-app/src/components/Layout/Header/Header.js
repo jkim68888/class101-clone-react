@@ -5,6 +5,7 @@ import find from "../../../imgs/find_ico.png";
 
 import Main from "../../../Pages/Main/Main";
 import Signin from "../../../Pages/Signin/Signin";
+import Signup from "../../../Pages/Signup/Signup";
 import Earlybird from "../../../Pages/Sub/Earlybird";
 import Event from "../../../Pages/Sub/Event";
 import NotFound from "../../../Pages/NotFound/NotFound";
@@ -68,6 +69,7 @@ const Header = () => {
       <Switch>
         <Route exact path="/" component={Main} />
         <Route path="/signin" component={Signin} />
+        <Route path="/signup" component={Signup} />
         <Route path="/sub/earlybird" component={Earlybird} />
         <Route path="/sub/event" component={Event} />
         <Route path="*" component={NotFound} />

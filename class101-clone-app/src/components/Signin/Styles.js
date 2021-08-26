@@ -41,16 +41,17 @@ export const InputFormWrapper = styled.div`
     width: 100%;
     height: 45px;
     background-color: #000;
-  }
-  button {
-    width: 100%;
-    height: 45px;
-    background-color: blue;
-    border-radius: 4px;
-    color: #fff;
 
-    &:hover {
-      opacity: 0.8;
+    button {
+      width: 100%;
+      height: 45px;
+      background-color: blue;
+      border-radius: 4px;
+      color: #fff;
+
+      &:hover {
+        opacity: 0.8;
+      }
     }
   }
 
