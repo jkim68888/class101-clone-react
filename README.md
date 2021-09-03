@@ -44,10 +44,6 @@
 1. 페이지 이동 : react-router-dom 의 `BrowserRouter` 와 `NavLink` 사용
 2. 회원가입&로그인 : `Firebase Authentication` 사용
 
-## 작업기간
-
-- 2021-08-09 ~
-
 ## 작업 기여도
 
 - 100%
