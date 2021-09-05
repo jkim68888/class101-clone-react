@@ -57,4 +57,11 @@ export const InputFormWrapper = styled.div`
       color: black;
     }
   }
+
+  #emailValidation,
+  #pwValidation,
+  #pwChkValidation {
+    position: relative;
+    top: -15px;
+  }
 `;
