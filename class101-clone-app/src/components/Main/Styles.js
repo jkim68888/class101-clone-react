@@ -15,6 +15,27 @@ export const MainSlideBannerWrapper = styled.div`
     height: 20px;
     line-height: 20px;
   }
+
+  & .slide01 {
+    background: url(https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455_960_720.jpg)
+      no-repeat center;
+    background-size: cover;
+  }
+  & .slide02 {
+    background: url(https://cdn.pixabay.com/photo/2015/12/01/20/28/forest-1072828_960_720.jpg)
+      no-repeat center;
+    background-size: cover;
+  }
+  & .slide03 {
+    background: url(https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823_960_720.jpg)
+      no-repeat center;
+    background-size: cover;
+  }
+  & .slide04 {
+    background: url(https://cdn.pixabay.com/photo/2013/11/28/10/36/road-220058_960_720.jpg)
+      no-repeat center;
+    background-size: cover;
+  }
 `;
 export const EventBannerWrapper = styled.div`
   max-width: 1172px;
@@ -25,7 +46,11 @@ export const EventBannerWrapper = styled.div`
   background: #121212;
 
   @media screen and (max-width: 1172px) {
-    padding: 0 30px;
+    margin: 60px 30px;
+  }
+
+  @media screen and (max-width: 580px) {
+    margin: 60px 15px;
   }
 
   h2 {
@@ -45,6 +70,10 @@ export const TimeDealWrap = styled.div`
 
   @media screen and (max-width: 1172px) {
     padding: 0 30px;
+  }
+
+  @media screen and (max-width: 580px) {
+    padding: 0 15px;
   }
 
   h2 {
@@ -176,6 +205,10 @@ export const MdDealWrap = styled.div`
     padding: 0 30px;
   }
 
+  @media screen and (max-width: 580px) {
+    padding: 0 15px;
+  }
+
   h2 {
     max-width: 1172px;
     margin: 0 auto 40px;
@@ -262,8 +295,9 @@ export const SlideBannerWrap = styled.div`
   height: 260px;
   margin: 0 auto;
 
-  @media screen and (max-width: 1172px) {
-    padding: 0 30px;
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
   }
 
   .swiper-slide {
@@ -283,6 +317,9 @@ export const SlideBannerWrap = styled.div`
         max-width: 1172px;
         height: 100%;
         margin: 0 auto;
+        @media screen and (max-width: 580px) {
+          padding: 0 20px;
+        }
 
         & .txtBox {
           display: table-cell;
@@ -292,11 +329,17 @@ export const SlideBannerWrap = styled.div`
             font-size: 28px;
             font-weight: 600;
             color: #fff;
+            @media screen and (max-width: 580px) {
+              font-size: 18px;
+            }
           }
           h2 {
             font-size: 18px;
             font-weight: 500;
             color: #fff;
+            @media screen and (max-width: 580px) {
+              font-size: 14px;
+            }
           }
           button {
             width: 100px;
@@ -315,6 +358,11 @@ export const SlideBannerWrap = styled.div`
         height: 250px;
         margin: 0 auto;
         border-radius: 100%;
+        @media screen and (max-width: 580px) {
+          top: -30px;
+          width: 200px;
+          height: 200px;
+        }
 
         & img {
           width: 100%;
@@ -337,6 +385,10 @@ export const BestWrap = styled.div`
 
   @media screen and (max-width: 1172px) {
     padding: 0 30px;
+  }
+
+  @media screen and (max-width: 580px) {
+    padding: 0 15px;
   }
 
   h2 {

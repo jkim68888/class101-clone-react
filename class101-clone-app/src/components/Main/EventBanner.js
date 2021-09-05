@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import { EventBannerWrapper } from './Styles';
+import { EventBannerWrapper } from "./Styles";
 
 const EventBanner = () => {
   return (

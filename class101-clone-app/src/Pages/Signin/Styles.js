@@ -10,6 +10,9 @@ export const SigninWrapper = styled.div`
     padding: 80px 0;
     width: 365px;
     margin: 0 auto;
+    @media screen and (max-width: 420px) {
+      width: 280px;
+    }
 
     h2 {
       font-size: 24px;

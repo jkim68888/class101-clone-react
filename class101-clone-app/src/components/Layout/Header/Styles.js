@@ -13,6 +13,10 @@ export const HeaderWrap = styled.div`
   @media screen and (max-width: 1172px) {
     padding: 0 30px;
   }
+
+  @media screen and (max-width: 580px) {
+    padding: 0 20px;
+  }
 `;
 export const TopHeader = styled.div`
   display: flex;
@@ -35,6 +39,9 @@ export const LeftHeader = styled.div`
     position: relative;
     width: 250px;
     line-height: 76px;
+    @media screen and (max-width: 580px) {
+      display: none;
+    }
 
     input {
       width: 100%;

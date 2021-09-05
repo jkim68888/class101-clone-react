@@ -27,10 +27,10 @@ const MainSlideBanner = () => {
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
+        <SwiperSlide className="slide01">Slide 1</SwiperSlide>
+        <SwiperSlide className="slide02">Slide 2</SwiperSlide>
+        <SwiperSlide className="slide03">Slide 3</SwiperSlide>
+        <SwiperSlide className="slide04">Slide 4</SwiperSlide>
       </Swiper>
     </MainSlideBannerWrapper>
   );
