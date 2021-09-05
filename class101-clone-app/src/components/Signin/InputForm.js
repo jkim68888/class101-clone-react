@@ -11,8 +11,11 @@ const InputForm = () => {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
 
-  const handleInputChange = (event) => {
+  const handleEmailChange = (event) => {
     setEmail(event.target.value);
+  };
+
+  const handlePwChange = (event) => {
     setPassword(event.target.value);
   };
 
@@ -32,6 +35,9 @@ const InputForm = () => {
         console.log(errorCode);
         console.log(errorMessage);
       });
+
+    console.log(email);
+    console.log(password);
   };
 
   const signInWithGoogle = (event) => {
@@ -57,7 +63,7 @@ const InputForm = () => {
       <form onSubmit={handleSubmit}>
         <label for="email">이메일</label>
         <input
-          onChange={handleInputChange}
+          onChange={handleEmailChange}
           required
           id="email"
           type="text"
@@ -65,7 +71,7 @@ const InputForm = () => {
         />
         <label for="pw">비밀번호</label>
         <input
-          onChange={handleInputChange}
+          onChange={handlePwChange}
           required
           id="pw"
           type="password"
