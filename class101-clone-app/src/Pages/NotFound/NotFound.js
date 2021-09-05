@@ -11,7 +11,7 @@ export const NotFoundWrapper = styled.div`
 `;
 
 const NotFound = () => {
-  return <NotFoundWrapper>페이지를 찾을 수 없습니다.</NotFoundWrapper>;
+  return <NotFoundWrapper>페이지 준비중입니다.</NotFoundWrapper>;
 };
 
 export default NotFound;
